@@ -1,0 +1,58 @@
+<mvc:View controllerName="starting.controller.List"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="list" title="{i18n>Listtitle}">
+        <content> 
+        
+                <List id="invoiceList" class="sapUiResponsiveMargin" width="auto" items="{/Invoices}">   
+                <headerToolbar>
+         <Toolbar>
+            <Title text="{i18n>invoiceListTitle}"/>
+            <ToolbarSpacer/>
+            <SearchField width="50%" search="onFilterInvoices" />
+         </Toolbar>
+      </headerToolbar>
+               
+                 <items>
+    <ObjectListItem
+				title="{Quantity} x {ProductName}"
+				number="{
+					parts: [{path: 'ExtendedPrice'}, {path: 'view>/currency'}],
+					type: 'sap.ui.model.type.Currency',
+					formatOptions: {
+						showMeasure: false
+					}
+				}"
+				numberUnit="{view>/currency}"
+				numberState="{=	${ExtendedPrice} > 50 ? 'Error' : 'Success' }">
+				<firstStatus>
+					<ObjectStatus text="{
+						path: 'Status',
+						formatter: '.formatter.statusText'
+					}"/>
+				</firstStatus>
+			</ObjectListItem>
+
+         <!-- <ObjectListItem
+           press="ohandle_press"
+            title="{ProductName}"
+            number="{
+		parts: [{path: 'ExtendedPrice'}, {path: '/currency'}],
+		type: 'sap.ui.model.type.Currency',
+		formatOptions: {
+			showMeasure: false
+		}
+		}"
+        numberUnit="{view>/currency}"
+		
+        	numberState="{= ${ExtendedPrice} > 50 ? 'Error' : 'Success' }"
+           />-->
+
+
+      </items>
+
+                        
+                </List> 
+        </content>
+    </Page>
+</mvc:View>

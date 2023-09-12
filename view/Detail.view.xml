@@ -1,0 +1,16 @@
+<mvc:View controllerName="starting.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="detail" title="{i18n>Detailtitle}" showNavButton="true" navButtonPress="oNavButton_press">
+        <content>
+        <VBox >
+         <Text text="Customer Name : {selectedProductModel>/CustomerName}" />
+        <Text text="Discount : {selectedProductModel>/Discount}" />
+        <Text text="Product Name : {selectedProductModel>/ProductName}" />
+        <Text text="Quantity : {selectedProductModel>/Quantity}" />
+
+        </VBox>
+        
+          </content>
+    </Page>
+</mvc:View>
