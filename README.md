@@ -11,4 +11,4 @@ To learn how to build this app, check out [this](https://help.sap.com/docs/link-
 
 This app is intended as a sample app that can be previwed using SAP Fiori tools in SAP Business Application Studio or Visual Studio Code. Refer to documentation for help on how to get started with SAP Fiori tools.
 
-You must have access to the SAP Gateway Demo system (ES5) for this sample app. Follow [this]('https://developers.sap.com/tutorials/gateway-demo-signup.html) tutorial to create one if you don't already have an account.
+You must have access to the SAP Gateway Demo system (ES5) for this sample app. Follow [this](https://developers.sap.com/tutorials/gateway-demo-signup.html) tutorial to create one if you don't already have an account.
