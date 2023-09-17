@@ -5,7 +5,7 @@ StreamLink Intern
 
 This is a sample app to manage products. This app is based on SAP Fiori elements list report project for OData V2.
 
-To learn how to build this app, check out this(https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Fdevelopers.sap.com%2Fgroup.fiori-tools-lrop.html) tutorial.
+To learn how to build this app, check out [this](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Fdevelopers.sap.com%2Fgroup.fiori-tools-lrop.html) tutorial.
 
 ## Requirements
 
